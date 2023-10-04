@@ -1,0 +1,12 @@
+<h1>List Data</h1>
+<section>
+  <a href="/posts/new">Create new data</a>
+  <% posts.map((post) => { %>
+  <h4><%= post.id %> .</h4>
+  <div style="display: flex; flex-direction: column; justify-content: center">
+    <h4>Title: <%= post.title %></h4>
+    <h4>Body: <%= post.body %></h4>
+  </div>
+  <hr />
+  <% }) %>
+</section>
